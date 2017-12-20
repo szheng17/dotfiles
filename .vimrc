@@ -42,7 +42,7 @@ set autoindent " align new line indent with previous line's indent
 set ruler " show (line number, column number)
 set tabstop=2 " number of spaces per tab when viewed
 set shiftwidth=2 " autoindentation width
-set softtabstop=4 " backspace tabs
+set softtabstop=2 " backspace tabs
 set expandtab " convert tabs to spaces
 
 " autocomplete braces
