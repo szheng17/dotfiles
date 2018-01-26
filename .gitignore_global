@@ -1,0 +1,6 @@
+# Mac Finder
+.DS_Store
+
+# Python compiled bytecode
+__pycache__
+*.pyc
