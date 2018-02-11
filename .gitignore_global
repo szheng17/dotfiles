@@ -2,5 +2,5 @@
 .DS_Store
 
 # Python compiled bytecode
-__pycache__
+__pycache__/
 *.pyc
