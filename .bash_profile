@@ -5,8 +5,10 @@ export GOPATH=$HOME/go
 # and human-readable file sizes
 alias ll='ls -hlFG'
 alias la='ll -A' # also show hidden files
-
 alias c='clear'
+function mkcd {
+  mkdir $1 && cd $1
+}
 
 # added by Anaconda3 5.0.1 installer
 export PATH="/anaconda3/bin:$PATH"
