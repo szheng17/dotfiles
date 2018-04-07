@@ -10,5 +10,8 @@ function mkcd {
   mkdir $1 && cd $1
 }
 
+# disable flow control, in particular lets us remap Ctrl-S
+stty -ixon
+
 # added by Anaconda3 5.0.1 installer
 export PATH="/anaconda3/bin:$PATH"

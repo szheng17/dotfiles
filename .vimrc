@@ -37,7 +37,7 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
-set autoindent " align new line indent with previous line's indent 
+set autoindent " align new line indent with previous line's indent
 
 set ruler " show (line number, column number)
 set tabstop=2 " number of spaces per tab when viewed
@@ -55,9 +55,13 @@ set hlsearch
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
 
 let g:ale_linters = {
-\ 'python': ['flake8', 'pylint'],
+\ 'python': ['flake8'],
 \}
 " only run linter when opening and saving files, don't run continuously while
-" editing text    
+" editing text
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_sign_column_always = 1
+
+" Remove all trailing whitespace
+" https://vi.stackexchange.com/questions/454/whats-the-simplest-way-to-strip-trailing-whitespace-from-all-lines-in-a-file
+nnoremap <C-s> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
